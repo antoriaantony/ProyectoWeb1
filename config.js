@@ -37,6 +37,7 @@ servidor.use(express.urlencoded({ extended: true })); // Para procesar formulari
 servidor.use(express.static(pagina));
 servidor.set("view engine", "hbs");
 hbs.registerPartials(path.join(__dirname, '/views/partials'));
+servidor.use(express.static(path.join(__dirname, "node_modules/bulma/css")))
 
 export {
   inicializarBaseDeDatos,
