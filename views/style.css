@@ -6,7 +6,7 @@
 .titulo{
     width: 100%;
     height: 70px;
-    background-color: rgb(7, 7, 97);
+    background-color: rgb(5, 91, 94);
     color: white;
     display: flex;
     justify-content: center;
@@ -18,7 +18,7 @@
     bottom: 0;
     width: 100%;
     height: 60px;
-    background-color: rgb(7, 7, 97);
+    background-color: rgb(7, 86, 97);
 }
 
 

@@ -4,9 +4,11 @@ import bcrypt from "bcryptjs";
 // Inicializar base de datos
 inicializarBaseDeDatos();
 
+servidor.get('/login', (req, res) => {res.render('./login.hbs'); // buscar el login.hbs dentro de /views
+})
+
 const menu = [
   { nombre: "inicio", ruta: "/", icono: "" },
-  { nombre: "contacto", ruta: "/contacto", icono: "" },
   { nombre: "ofertas", ruta: "/ofertas", icono: "" },
   { nombre: "carrito", ruta: "/carrito", icono: "" },
   { nombre: "login" , ruta: "/login" , icono: ""},
@@ -14,19 +16,19 @@ const menu = [
 
 const carrito = [
   {
-    nombre: "Memoria RAM",
-    precio: 90,
-    foto: ""
+    nombre: "iPhone8",
+    precio: 70,
+    foto: "iphone8.jpeg"
   },
   {
-    nombre: "CPU Ryzen 7",
+    nombre: "iPhone5",
     precio: 500,
-    foto: ""
+    foto: "iphone5.jpeg"
   },
   {
-    nombre: "Intel I7",
-    precio: 700,
-    foto: ""
+    nombre: "iphone12",
+    precio: 500,
+    foto: "iphone12.jpeg"
   }
 ];
 
