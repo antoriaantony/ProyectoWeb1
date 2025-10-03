@@ -3,6 +3,12 @@ import bcrypt from "bcryptjs";
 
 // Inicializar base de datos
 inicializarBaseDeDatos();
+const validar=(req,res,next)=>{
+  const {usuario,contra,correo} =req.body
+  if(correo !="" && usuario!="" && contra!="" ){
+    
+  }
+}
 
 servidor.get('/login', (req, res) => {res.render('./login.hbs'); // buscar el login.hbs dentro de /views
 })
@@ -35,16 +41,16 @@ const carrito = [
 servidor.get("/", (req, res) => {
   res.render("index.hbs", { menu, carrito });
 });
-
-servidor.get("/carrito", (req, res) => {
+// get(Obtener) , post(Enviar) , put(Actualizar) , delete(Borrar)
+servidor.put("/carrito", validar (req, res) => {
   res.render("carrito.hbs", { menu, carrito });
 });
 
-servidor.get("/contacto", (req, res) => {
+servidor.put("/contacto", (req, res) => {
   res.render("contacto.hbs", { menu });
 });
 
-servidor.get("/ofertas", (req, res) => {
+servidor.delete("/ofertas", (req, res) => {
   res.render("ofertas.hbs", { menu });
 });
 
