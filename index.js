@@ -6,7 +6,7 @@ inicializarBaseDeDatos();
 const validar=(req,res,next)=>{
   const {usuario,contra,correo} =req.body
   if(correo !="" && usuario!="" && contra!="" ){
-    
+
   }
 }
 
@@ -42,7 +42,7 @@ servidor.get("/", (req, res) => {
   res.render("index.hbs", { menu, carrito });
 });
 // get(Obtener) , post(Enviar) , put(Actualizar) , delete(Borrar)
-servidor.put("/carrito", validar (req, res) => {
+servidor.put("/carrito", validar ,(req, res) => {
   res.render("carrito.hbs", { menu, carrito });
 });
 
