@@ -6,10 +6,14 @@ inicializarBaseDeDatos();
 const validar=(req,res,next)=>{
   const {usuario,contra,correo} =req.body
   if(correo !="" && usuario!="" && contra!="" ){
+<<<<<<< HEAD
     next()
   }
   else{
     res.status(400).json("Debe imgresar datos correcto")
+=======
+
+>>>>>>> 62f220d33e8af1e817a546b71810e4d346651d44
   }
 }
 
