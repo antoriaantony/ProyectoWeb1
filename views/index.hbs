@@ -24,6 +24,11 @@
  
 
 
+<div class="columns">
+  <div class="column">Primera columna</div>
+  <div class="column">Segunda columna</div>
+  <div class="column">Tercera columna</div>
+</div>
 
 
 
@@ -65,38 +70,45 @@
 <style>
 .login-section {
     background: rgb(106, 197, 193);
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.479);
-    margin: 40px 0;
+    padding: 1cm;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.479);
+    margin: 30px auto;
+    block-size: 350px;
+    max-width: 38%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .login-title {
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     color: #000000;
     font-size: 26px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 label {
     display: block;
     margin-bottom: 8px;
     font-weight: 600;
-    color: #555;
+    color: #000000;
 }
 
 input {
-    width: 100%;
-    padding: 12px;
+    width: 120%;
+    padding: 8px;
     border: 1px solid #000000;
-    border-radius: 5px;
+    border-radius: 3px;
     font-size: 16px;
     transition: border 0.3s;
+    
 }
 
 input:focus {
@@ -105,10 +117,12 @@ input:focus {
 }
 
 .btn-login {
-    width: 100%;
+    display: block;
+    margin: 0 auto;
+    width: 40%;
     padding: 12px;
     background-color: #c4206d;
-    color: rgb(255, 255, 255);
+    color: #fff;
     border: none;
     border-radius: 5px;
     font-size: 16px;
@@ -124,7 +138,7 @@ input:focus {
 .login-footer {
     text-align: center;
     margin-top: 20px;
-    color: #666;
+    color: #000000;
 }
 
 .login-footer a {
